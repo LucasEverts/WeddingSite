@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.main-back-img {
+    background: url(assets/images/home_pic.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

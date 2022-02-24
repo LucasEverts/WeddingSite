@@ -1,0 +1,55 @@
+.rsvp-title {
+    text-align: center;
+    font-size: 60px;
+    /* font-style: italic; */
+    font-family: Snell Roundhand, cursive;
+    /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
+}
+
+.rsvp-form {
+    text-align: center;
+    font-family: serif;
+    font-style: oblique;
+}
+
+.form-contents {
+    display: inline-grid;
+    width: 50%;
+}
+
+.form-label{
+    float: left;
+    font-size: 45px;
+    width: max-content;
+    color: cornsilk;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.name-input {
+    float: right;
+    width: 20em;
+    height: 3em;
+}
+
+.form-input {
+    margin-bottom: 25px;
+}
+
+.accept-inputs {
+    margin-bottom: 25px;
+    max-width: 75%;
+}
+
+input[type='radio'] { 
+    transform: scale(2); 
+    float: right;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    font-style: oblique;
+    font-family: serif;
+    font-size: 20px;
+    width: 6em;
+    background-color: cornsilk;
+}

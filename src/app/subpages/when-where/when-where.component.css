@@ -1,0 +1,31 @@
+.ww-title {
+    text-align: center;
+    font-size: 60px;
+    /* font-style: italic; */
+    font-family: Snell Roundhand, cursive;
+    /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
+}
+
+.ww-subtitle {
+    text-align: center;
+    font-size: 30px;
+    /* font-style: italic; */
+    font-family: Snell Roundhand, cursive;
+    /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
+    margin-block-end: 4em;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: right;
+    padding: 20px;
+}  

@@ -1,0 +1,33 @@
+.left-button {
+    background: #363e5a;
+    border-radius: 6px;
+    border: 3px solid darkgray;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    outline: 0;
+    margin-right: 25px;
+    float: left;
+}
+
+.right-button {
+    background: #363e5a;
+    border-radius: 6px;
+    border: 3px solid darkgray;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    outline: 0;
+    margin-left: 25px;
+    float: right;
+}
