@@ -1,30 +1,25 @@
 <div>
     <h1 class="rsvp-title">RSVP to our Wedding</h1>
     <div class="rsvp-form">
-        <form [formGroup]="rsvpForm" (ngSubmit)="onSubmit()" class="form-contents">
+        <form ngNoForm id="rsvpForm" class="form-contents" method="POST" action="https://script.google.com/macros/s/AKfycbzB_ISVMgq4XqMW9LhiTGagLcX3iS9MD2gfUHb8MsygqyESCLt41-OrsS78rFmJZuIC/exec">
             <div class="form-input">
-                <label for="guest-name" class="form-label">Guest Full Name: </label>
-                <input id="guest-name" type="text" formControlName="name" class="name-input">
-            </div>
-
-            <div class="form-input">
-                <label for="guest-plusOne" class="form-label">Plus One Full Name: </label>
-                <input id="guest-plusOne" type="text" formControlName="plusOneName" class="name-input">
+                <label class="form-label">Guest Full Name: </label>
+                <input name="GuestName" type="text" class="name-input">
             </div>
 
             <div class="form-input">
-                <label for="guest-kids" class="form-label">Number of Children: </label>
-                <input id="guest-kids" type="number" formControlName="numberOfChildren" class="name-input" min="0" max="5" placeholder="0">
+                <label class="form-label">Plus One Full Name: </label>
+                <input name="PlusOneName" type="text" class="name-input">
             </div>
 
-            <div class="accept-inputs">
-                <label for="guest-accepts" class="form-label">Joyfully Accepts: </label>
-                <input id="guest-accepts" type="radio" formControlName="guestAccepts" value="true">
+            <div class="form-input">
+                <label class="form-label">Number of Children: </label>
+                <input name="NumberOfChildren" type="number" class="name-input" min="0" max="5" placeholder="0">
             </div>
 
-            <div class="accept-inputs">
-                <label for="guest-declines" class="form-label">Regretfully Declines: </label>
-                <input id="guest-declines" type="radio" formControlName="guestAccepts" value="false">
+            <div class="form-input">
+                <label class="form-label">Song Request: </label>
+                <input name="SongRequest" type="text" class="name-input">
             </div>
 
             <div class="form-input">

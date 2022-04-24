@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-guest-rsvp',
@@ -8,20 +7,32 @@ import { FormControl, FormGroup, ReactiveFormsModule, FormsModule } from '@angul
 })
 export class GuestRsvpComponent implements OnInit {
 
-  rsvpForm = new FormGroup({
-    name: new FormControl(''),
-    plusOneName: new FormControl(''),
-    numberOfChildren: new FormControl(''),
-    guestAccepts: new FormControl(''),
-  });
+  submitData: any;
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
+    this.SetSubmitListener();
   }
 
-  onSubmit(){
-    console.log(this.rsvpForm);
+  SetSubmitListener() {
+      var form = document.getElementById('rsvpForm')! as HTMLFormElement;
+      this.submitData = function(e: any) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = form.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+        .then(() => {
+          form.reset();
+          alert("Thank You for your RSVP!");
+        });
+        return false;
+      };
+      document.getElementById('rsvpForm')!.addEventListener("submit", this.submitData.bind(this), true);
+    
   }
-
 }
