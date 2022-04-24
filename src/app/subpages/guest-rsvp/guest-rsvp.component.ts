@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GuestRsvpComponent implements OnInit {
 
+  isSubmitted: boolean = false;
   submitData: any;
 
   constructor() { 
@@ -19,6 +20,7 @@ export class GuestRsvpComponent implements OnInit {
   SetSubmitListener() {
       var form = document.getElementById('rsvpForm')! as HTMLFormElement;
       this.submitData = function(e: any) {
+        this.isSubmitted = true;
         e.preventDefault();
         const data = new FormData(form);
         const action = form.action;
@@ -28,6 +30,7 @@ export class GuestRsvpComponent implements OnInit {
         })
         .then(() => {
           form.reset();
+          this.isSubmitted = false;
           alert("Thank You for your RSVP!");
         });
         return false;
