@@ -29,3 +29,9 @@ a {
     float: right;
     padding: 20px;
 }  
+
+@media (max-width: 555px) {
+    .float-child{
+        padding: 0px;
+    }
+}

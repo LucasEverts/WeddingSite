@@ -53,3 +53,15 @@ input[type='radio'] {
     width: 6em;
     background-color: cornsilk;
 }
+
+@media (max-width: 555px) {
+    .rsvp-form {
+        font-family: serif;
+        font-style: oblique;
+    }
+
+    .form-contents {
+        display: inline-grid;
+        width: fit-content;
+    }
+}

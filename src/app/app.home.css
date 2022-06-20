@@ -12,6 +12,7 @@
     text-decoration: none;
     outline: 0;
     margin-right: 25px;
+    margin-bottom: 10px;
     float: left;
 }
 
@@ -29,5 +30,18 @@
     text-decoration: none;
     outline: 0;
     margin-left: 25px;
+    margin-bottom: 10px;
     float: right;
+}
+
+.nav-bar { 
+    display: block;
+}
+
+@media (max-width: 555px) {
+    .nav-bar {
+        display: inline-grid;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
