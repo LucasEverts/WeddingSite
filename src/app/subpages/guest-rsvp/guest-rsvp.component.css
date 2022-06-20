@@ -51,6 +51,7 @@ input[type='radio'] {
     font-family: serif;
     font-size: 20px;
     width: 6em;
+    color: black;
     background-color: cornsilk;
 }
 
