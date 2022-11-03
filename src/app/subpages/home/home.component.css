@@ -1,6 +1,6 @@
 .home-title {
     text-align: center;
-    font-family: cursive;
+    font-style: italic;
     font-size: 70px;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     margin-block-start: .5em;
@@ -9,7 +9,7 @@
 
 .home-subtitle {
     text-align: center;
-    font-family: cursive;
+    font-style: italic;
     font-size: 40px;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     margin-block-start: 2em;
