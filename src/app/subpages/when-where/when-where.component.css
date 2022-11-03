@@ -1,16 +1,14 @@
 .ww-title {
     text-align: center;
     font-size: 60px;
-    /* font-style: italic; */
-    font-family: Snell Roundhand, cursive;
+    font-style: italic;
     /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
 }
 
 .ww-subtitle {
     text-align: center;
     font-size: 30px;
-    /* font-style: italic; */
-    font-family: Snell Roundhand, cursive;
+    font-style: italic;
     /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
     margin-block-end: 4em;
 }
@@ -43,8 +41,7 @@ a {
     .ww-subtitle {
         text-align: center;
         font-size: 30px;
-        /* font-style: italic; */
-        font-family: Snell Roundhand, cursive;
+        font-style: italic;
         /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
         margin-block-end: 0px;
     }
@@ -52,8 +49,7 @@ a {
     .ww-title {
         text-align: center;
         font-size: 60px;
-        /* font-style: italic; */
-        font-family: Snell Roundhand, cursive;
+        font-style: italic;
         /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
         margin-block-end: -25px;
     }
